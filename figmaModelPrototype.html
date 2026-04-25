@@ -8,17 +8,125 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Petit Formal Script">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Serif Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calligraffitti">
   <style>
     * {
       font-family: "Plus Jakarta Sans";
     }
 
-    .customBgColor1 {
-      background-color: #8b4b00;
+    :root {
+      --accent1: #8b4b00;
+      --accent2: #993e1f;
+      --accent3: #491b1a;
     }
 
-    .customTextColor1 {
-      color: #8b4b00;
+    .theme1 {
+      background-color: var(--accent1);
+    }
+
+    .theme2 {
+      color: var(--accent1);
+    }
+
+    .theme3 {
+      background-image: url('RealMetaPic1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding-top: 240px;
+      padding-bottom: 240px;
+    }
+
+    .theme4 {
+      font-family: "Petit Formal Script";
+    }
+
+    .theme5 {
+      font-family: "Roboto Slab";
+    }
+
+    .theme6 {
+      line-height: 20px;
+    }
+
+    .theme7 {
+      font-family: "Inter";
+    }
+
+    .theme8 {
+      font-size: 14px;
+    }
+
+    .theme9 {
+      background-color: #ffffff;
+      color: var(--accent1);
+      border-radius: 50px;
+      padding: 13px;
+      border: none;
+      font-family: Inter;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 200ms ease;
+    }
+
+    .theme9:hover {
+      transform: scale(1.1);
+    }
+
+    .theme10 {
+      text-shadow: 0px 0px 1px black;
+    }
+
+    .theme11 {
+      color: var(--accent2);
+    }
+
+    .theme12 {
+      font-size: clamp(30px, 3vw, 60px);
+    }
+
+    .theme13 {
+      font-size: clamp(20px, 2vw, 60px);
+    }
+
+    .theme14 {
+      line-height: 2vw;
+    }
+
+    .theme15 {
+      background-image: radial-gradient(#cc9e61, #7f4a22);
+    }
+
+    .theme16 {
+      font-family: "DM Serif Display";
+    }
+
+    .theme17 {
+      font-family: "DM Sans";
+    }
+
+    .theme18 {
+      font-family: "Calligraffitti";
+    }
+
+    .theme19 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .theme19 * {
+      color: var(--accent3);
+    }
+
+    .theme20 {
+      text-shadow: 0px 0px 3px #96572a;
     }
   </style>
 </head>
@@ -27,79 +135,47 @@
   <nav class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
       <ul class="navbar-nav">
-        <li class="nav-item p-1 customTextColor1 fw-bolder">RealMeta India</li>
+        <li class="nav-iteem p-1 fw-bolder"><i class="fa-solid fa-bars"></i></li>
+        <li class="nav-item p-1 theme2 fw-bolder">RealMeta India</li>
       </ul>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item p-1"><i class="fa-solid fa-language"></i></li>
         <li class="nav-item p-1"><i class="fa-solid fa-globe"></i></li>
-        <li class="nav-item customBgColor1 text-light rounded p-1">Download App</li>
+        <li class="nav-item theme1 text-light rounded p-1">Download App</li>
       </ul>
     </div>
   </nav>
-  <div class="container-fluid text-center">
-    <h1 class="display-1">Modern Relics for the <span class="fst-italic fw-bolder customTextColor1"><br> Digital
-        Era</span>
-    </h1>
-    <p>Bridging Bharat's 5,000-year legacy with the precision of Web3 and Metaverse technologies</p>
-    <h1 class="fw-bold mt-5">Flagship Solutions</h1>
-    <p>We create environments where history breaths. From proximity-based narratives to global VR nodes.</p>
-    <div class="card ms-5 me-5">
-      <div class="card-body">
-        <h1 class="fw-bolder">🎯Museum 2.0: Smart Museums</h1>
-        <p>AI-driven guides, IoT-enabled artifacts,
-          and interactive displays that respond to
-          visitor proximity.</p>
-        <table class="table table-striped">
-          <tr>
-            <td>🎯Proximity-based narratives<i class="fa-solid fa-square-check"></i></td>
-          </tr>
-          <tr>
-            <td>🎯AI-Historical Chatbots<i class="fa-solid fa-square-check"></i></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="card ms-5 me-5 mt-2">
-      <div class="card-body">
-        <h1 class="fw-bolder">🎯Experience Centers</h1>
-        <p>Full-scale VR walk-throughs of lost
-          heritage sites for global access.</p>
-      </div>
-    </div>
-    <div class="card ms-5 me-5 mt-2">
-      <div class="card-body">
-        <h1 class="fw-bolder">🎯3D Digitization
-        </h1>
-        <p>Capturing artifacts at sub-millimeter
-          precision for eternal preservation in
-          the Metaverse
-        </p>
-      </div>
-    </div>
-    <div class="card ms-5 me-5 mt-2">
-      <div class="card-body">
-        <h1 class="fw-bolder">🎯End-to-End Design</h1>
-        <p>
-          From conceptualization to brick-and-mortar execution.
-          We design the physical spaces and the digital layers
-          that inhabit them.
-        </p>
-        <table class="table table-striped">
-          <tr>
-            <td>🎯Feasibility & Concept<i class="fa-solid fa-square-check"></i></td>
-          </tr>
-          <tr>
-            <td>🎯Tech Integration<i class="fa-solid fa-square-check"></i></td>
-          </tr>
-          <tr>
-            <td>🎯Curation & CMS<i class="fa-solid fa-square-check"></i></td>
-          </tr>
-          <tr>
-            <td>🎯Support and Updates<i class="fa-solid fa-square-check"></i></td>
-          </tr>
-        </table>
-      </div>
-    </div>
+
+  <div class="container-fluid theme3 text-center">
+    <p class="theme4 fw-bold theme6 theme13">Preserving India's heritage through
+    <p class="theme5 theme6 theme2 theme11 theme12 theme14">Digital Experience<br></p>
+    <p class="theme7 theme8">From conservation to remote museum access, we help<br> institutions bring culture
+      to life
+      for
+      every
+      generation.</p>
+
+    <div class="theme9">Request Proposals</div>
+  </div>
+
+  <div class="container-fluid theme15 text-center theme19">
+    <h1 class="theme16 fw-bold">Why RealMeta</h1>
+    <p>Preserving Bharat’s Cultural Legacy for Future<br> Generations<br></p>
+    <p class="theme17 fw-bold fs-5"><span class="theme18">I</span>ndia’s heritage is a living legacy—rich in history,
+      art,
+      and knowledge, shaped over<br> centuries. Yet, much of it remains confined within physical spaces, limiting access
+      for<br>
+      wider audiences and making it harder for future generations to meaningfully connect<br> with their cultural roots.
+    </p>
+    <p class="theme17 fw-bold fs-5"><span class="theme18">R</span>eal Meta partners with museums and cultural
+      institutions to preserve, protect,<br> and present this legacy through immersive digital experiences. By
+      blending<br>
+      storytelling with technology, we ensure that Bharat’s stories remain accessible,<br> engaging, and enduring in a
+      rapidly evolving world.</p>
+
+    <p class="theme20">※ We are not just digitizing heritage—we are safeguarding cultural memory for<br> generations to
+      come. ※</p>
+  </div>
 
 </body>
 
